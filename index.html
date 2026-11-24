@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Culture, Commercial Transformation &amp; Growth Roadmap - PT Sparta Computindo</title>
+    <meta name="description" content="Culture, Commercial Transformation &amp; Growth Roadmap. PT Sparta Computindo Teknologi by Harry Gultom - Kandidat Manager Sales &amp; Marketing." />
+    <link rel="canonical" href="https://harry-sparta.vercel.app/" />
+    <link rel="icon" type="image/webp" href="/logo.webp" />
+    <link rel="apple-touch-icon" href="/logo.webp" />
+    <meta property="og:title" content="Culture, Commercial Transformation &amp; Growth Roadmap - PT Sparta Computindo" />
+    <meta property="og:description" content="Culture, Commercial Transformation &amp; Growth Roadmap. PT Sparta Computindo Teknologi by Harry Gultom - Kandidat Manager Sales &amp; Marketing." />
+    <meta property="og:url" content="https://harry-sparta.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PT Sparta Computindo" />
+    <meta property="og:image" content="https://harry-sparta.vercel.app/logo.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://harry-sparta.vercel.app/" />
+    <meta name="twitter:title" content="Culture, Commercial Transformation &amp; Growth Roadmap - PT Sparta Computindo" />
+    <meta name="twitter:description" content="Culture, Commercial Transformation &amp; Growth Roadmap - PT Sparta Computindo Teknologi by Harry Gultom - Kandidat Manager Sales &amp; Marketing." />
+    <meta name="twitter:image" content="https://harry-sparta.vercel.app/logo.webp" />
+    <meta name="theme-color" content="#dc2626" />
+    <meta name="robots" content="index, follow" />
+    <script>
+      (function () {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var rawMode = params.get('mode') || params.get('theme');
+          var urlTheme = rawMode === 'right' ? 'light' : rawMode;
+          var urlLang = params.get('lang');
+          var cachedTheme = localStorage.getItem('sparta_theme_v2');
+          var cachedLang = localStorage.getItem('sparta_language_v2');
+          var theme = (urlTheme === 'light' || urlTheme === 'dark')
+            ? urlTheme
+            : ((cachedTheme === 'light' || cachedTheme === 'dark') ? cachedTheme : 'light');
+          var lang = (urlLang === 'in' || urlLang === 'en')
+            ? urlLang
+            : ((cachedLang === 'in' || cachedLang === 'en') ? cachedLang : 'in');
+          var root = document.documentElement;
+          root.lang = lang === 'en' ? 'en' : 'id';
+          if (theme === 'dark') {
+            root.classList.add('dark');
+            root.style.colorScheme = 'dark';
+            root.style.backgroundColor = '#09090b';
+          } else {
+            root.classList.remove('dark');
+            root.style.colorScheme = 'light';
+            root.style.backgroundColor = '#ffffff';
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                950: '#09090b',
+                900: '#0f0a0c', // Deep Charcoal-Crimson
+                800: '#281116',
+                700: '#b91c1c', // Strong Sparta Crimson
+                600: '#dc2626', // Primary Sparta Red
+                500: '#ef4444', // Vibrant Red
+                400: '#f87171', // Light Red Accent
+                300: '#fca5a5',
+                200: '#fecaca',
+                100: '#fee2e2',
+                50: '#fef2f2',
+                accent: '#e11d48', // Crimson Rose Accent
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
